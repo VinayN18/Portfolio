@@ -155,14 +155,14 @@ hr {
 }
 
 .top-cloud {
-  animation: movetopcloud 14s linear infinite;
+  animation: movetopcloud 40s linear infinite;
 }
 @keyframes movetopcloud {
   0% {
-    margin-left: -120%;
+    margin-left: -110%;
   }
   100% {
-    margin-left: 120%;
+    margin-left: 110%;
   }
 }
 .middle-cloud:before,
@@ -170,14 +170,14 @@ hr {
   transform: translateX(100%);
 }
 .middle-cloud {
-  animation: movebottomcloud 17s linear infinite;
+  animation: movebottomcloud 30s linear infinite;
 }
 .bottom-cloud:before,
 .bottom-cloud:after {
   transform: translateX(100%);
 }
 .bottom-cloud {
-  animation: movebottomcloud 17s 2s linear infinite;
+  animation: movebottomcloud 50s linear infinite;
 }
 
 @keyframes movebottomcloud {
