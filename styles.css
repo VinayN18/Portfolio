@@ -76,18 +76,26 @@ hr {
   background-color: #66bfbf;
   padding: 50px 0 20px;
 }
-.bottom-cloud:before,
-.bottom-cloud:after {
+.bottom-cloud {
   position: absolute;
-  /* left: 1rem;
-  bottom: 19rem; */
+  opacity: 0.4;
+  width: 7rem;
+  top: 18rem;
 }
-.top-cloud:before,
-.top-cloud:after {
+.middle-cloud {
+  position: absolute;
+  opacity: 0.8;
+  width: 11rem;
+  top: 24rem;
+  z-index: 2;
+}
+.top-cloud {
   content: "";
   position: absolute;
-  right: 18.75rem;
-  top: 2.5rem;
+  /* right: 18.75rem;
+  top: 2.5rem; */
+  width: 13rem;
+  top: 1.875rem;
 }
 
 /* .mountain-img {
@@ -157,13 +165,19 @@ hr {
     margin-left: 120%;
   }
 }
-
+.middle-cloud:before,
+.middle-cloud:after {
+  transform: translateX(100%);
+}
+.middle-cloud {
+  animation: movebottomcloud 17s linear infinite;
+}
 .bottom-cloud:before,
 .bottom-cloud:after {
   transform: translateX(100%);
 }
 .bottom-cloud {
-  animation: movebottomcloud 17s linear infinite;
+  animation: movebottomcloud 17s 2s linear infinite;
 }
 
 @keyframes movebottomcloud {
