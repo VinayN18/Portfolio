@@ -12,7 +12,7 @@
 body {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #40514e;
   overflow-x: hidden;
 }
@@ -47,7 +47,7 @@ a:hover {
   color: #045456;
 }
 p {
-  line-height: 2;
+  line-height: 1.5;
 }
 hr {
   border: dotted #afb9b9 6px;
@@ -103,12 +103,21 @@ hr {
   top: 50px;
 } */
 .about-me {
-  width: 75%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
+  width: 75%;
+  display: flex;
+  margin: 100px;
   text-align: left;
+}
+.one {
+  flex-wrap: wrap;
+}
+.two {
+  flex-wrap: wrap-reverse;
 }
 .vinay-img {
   height: 300px;
@@ -118,14 +127,14 @@ hr {
 }
 .comp-img {
   width: 27%;
-  float: left;
+  /* float: left; */
   margin-right: 30px;
   border-radius: 10%;
 }
 .cp-img {
-  width: 28%;
-  float: right;
-  margin-left: 30px;
+  width: 27%;
+  /* float: right; */
+  margin-right: 30px;
   border-radius: 10%;
 }
 .intro {
