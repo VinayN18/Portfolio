@@ -15,13 +15,14 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
       <br />
       <p>Site under construction :))</p>
       <img class="top-cloud" src="images/cloud.png" alt="Cloud-img" />
-      <h1>Hello, I'm Vinay!</h1>
+      <h1><span class="name">Hello, I'm Vinay!</span></h1>
       <img class="middle-cloud" src="images/cloud.png" alt="cloud-img" />
       <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img" />
       <br />
@@ -30,20 +31,29 @@
       <img class="mountain-img" src="images/mountain.png" alt="mountain-img" />
     </header>
     <nav class="nav-bar">
-      <a href="">About</a>
-      <a href="">Skills</a>
-      <a href="">Contact</a>
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="#section--1">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--2">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--3">Contact</a>
+        </li>
+      </ul>
     </nav>
     <main class="main">
-      <div class="about">
+      <div class="about" id="section--1">
         <h2>About Me</h2>
         <div class="about-me">
-          <img
-            class="vinay-img"
-            src="images/N.Vinay_B21AI023.jpg"
-            alt="my image"
-          />
-
+          <div>
+            <img
+              class="vinay-img"
+              src="images/N.Vinay_B21AI023.jpg"
+              alt="my image"
+            />
+          </div>
           <div class="intro">
             <p>I am Vinay, a web developer and a student</p>
             <p>
@@ -54,32 +64,136 @@
         </div>
       </div>
       <hr />
-      <div class="skills">
+      <div class="skills" id="section--2">
         <h2>My Skills</h2>
-        <div class="skill-row one">
-          <img class="comp-img" src="images/computer.jpg" alt="computer-img" />
-          <div class="skill-inside">
-            <h3>Design & Devlopment</h3>
-            <p>
-              I am very much interested in devlopment and want to become an
-              expert in this domain
-            </p>
+        <div class="skills-grid">
+          <div class="skill-row">
+            <div>
+              <img
+                class="comp-img"
+                src="images/computer.jpg"
+                alt="computer-img"
+              />
+            </div>
+            <div class="skill-inside one">
+              <h3>Design & Devlopment</h3>
+              <p>
+                I am very much interested in devlopment and want to become an
+                expert in this domain. Major interest
+                <strong class="strng">FRONTEND DEVLOPMENT</strong>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="skill-row two">
-          <div class="skill-inside second">
-            <h3>Competetive Programming</h3>
-            <p>
-              This teaches me how to think!! Programming is a challenging role
-              and once we enter this field we will encounter new challenges and
-              be ready to solve them.
-            </p>
+          <div class="skill-row two">
+            <div class="skill-inside second">
+              <h3>Competetive Programming</h3>
+              <p>
+                This teaches me how to think!! Programming is a challenging role
+                and once we enter this field we will encounter new challenges
+                and be ready to solve them.
+              </p>
+            </div>
+            <div>
+              <img
+                class="cp-img"
+                src="https://f4n3x6c5.stackpathcdn.com/article/what-is-competitive-programming-and-why-it-is-importantcontests/Images/Top-10-Programming-Languages-to-Watch-Out-in-2019.png"
+                alt="cp-img"
+              />
+            </div>
           </div>
-          <img class="cp-img" src="images/cp.png" alt="cp-img" />
         </div>
       </div>
       <hr />
-      <div class="contact-me">
+      <section class="skills" id="section--3">
+        <h2>Projects</h2>
+        <div class="slider">
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                NextUp (Engineering Design Project)
+              </h5>
+              <div class="grid1">
+                <div>
+                  <a href="https://vinayn18.github.io/NextUp/"
+                    ><img
+                      src="images/Screenshot (737).png"
+                      href="https://vinayn18.github.io/NextUp/"
+                      alt=""
+                      class="testimonial__photo nextup"
+                  /></a>
+                </div>
+                <div>
+                  <blockquote class="testimonial__text">
+                    Used HTML for layout and structure, CSS for designing the
+                    website, and JavaScript for animations.
+                  </blockquote>
+                  <p>May 2021 - July 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">
+                Small Games for Entertainment 😅
+              </h5>
+              <blockquote class="testimonial__text">
+                Designed small games with HTML, CSS and JavaScript. Go to my
+                GitHub repo for more details.
+              </blockquote>
+              <div class="grid1">
+                <div>
+                  <a href="https://vinayn18.github.io/PigGame/"
+                    ><img
+                      src="images/Screenshot (739).png"
+                      alt=""
+                      class="testimonial__photo"
+                  /></a>
+                  <p class="game">Pig Game</p>
+                </div>
+                <div>
+                  <a href="https://vinayn18.github.io/Guess-Number/"
+                    ><img
+                      src="images/Screenshot (738).png"
+                      alt=""
+                      class="testimonial__photo"
+                  /></a>
+                  <p class="game">Guess Number</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="testimonial">
+              <h5 class="testimonial__header">Angular Framework</h5>
+              <div class="grid1">
+                <div>
+                  <a href="https://github.com/VinayN18/Small-Project-on-Angular"
+                    ><img
+                      src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1096616/retina_1708x683_cover-top-18-most-common-angularjs-developer-mistakes-41f9ad303a51db70e4a5204e101e7414.png"
+                      alt=""
+                      class="testimonial__photo"
+                  /></a>
+                </div>
+                <div>
+                  <blockquote class="testimonial__text">
+                    Doing project under the mentorship by implementing most of
+                    the Angular framework libraries
+                  </blockquote>
+                  <p>December 2022 - Present</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+      <div class="contact-me" id="section--4">
         <h2>Get In Touch</h2>
         <h3>You can contact me</h3>
         <p class="contact-message">
